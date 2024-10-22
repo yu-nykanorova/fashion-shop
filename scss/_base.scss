@@ -1,0 +1,24 @@
+* {
+    transition: var(--transition);
+}
+
+html, body {
+	height: 100%;
+}
+html {
+	font-size: 1px;
+}
+
+body {
+	font-size: 16rem;
+	font-family: var(--main-font);
+	background: var(--c-white);
+    color: var(--c-black);
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}

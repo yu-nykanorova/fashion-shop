@@ -1,0 +1,108 @@
+.app {
+    max-width: 1920px;
+    margin-inline: auto;
+    margin-bottom: 200px;
+    padding: 0 218px;
+}
+
+.app__container {
+    max-width: 1483px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app__info {
+    font-family: var(--main-font);
+    max-width: 520px;
+}
+
+.app__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 150%;
+    letter-spacing: 0.06em;
+    color: var(--c-black);
+    margin-bottom: 41px;
+}
+.app__desc {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 146%;
+    letter-spacing: -0.04em;
+    color: #7c7c7c;
+    margin-bottom: 65px;
+}
+.app__download {
+    max-width: 420px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__download a:hover {
+    transform: scale(1.05);
+}
+
+.app__image {
+    position: relative;
+}
+
+.mobile_app:hover {
+    transform: scale(1.05);
+}
+
+.ring_large {
+    width: 135%;
+    height: 70%;
+    position: absolute;
+    padding: 50px;
+    border: 3px solid #efeceb;
+    border-radius: 100%;
+    top: 15%;
+    right: -17%;
+    z-index: -1;
+}
+
+.ring_medium {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #efeceb;
+    border-radius: 100%;
+    /* width: 537px; */
+}
+
+.ring_small {
+    border: 3px solid #efeceb;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+.app__image .ellipse {
+    position: absolute;
+}
+
+.ellipse_large-grey {
+    max-width: 22px;
+    top: 16%;
+    left: -15%;
+}
+
+.ellipse_large-yellow {
+    max-width: 50px;
+    top: 15%;
+    right: -10%;
+}
+
+.ellipse_small-yellow {
+    max-width: 34px;
+    bottom: 11%;
+    left: -17%;
+}
+
+.ellipse_small-grey {
+    max-width: 17px;
+    bottom: 22%;
+    right: -15%;
+}

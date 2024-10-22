@@ -1,0 +1,168 @@
+.welcome {
+    max-width: 1920px;
+    padding: 100px 46px 0;
+    margin-bottom: 63px;
+    margin-inline: auto;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.header__logo:hover {
+    transform: scale(1.1);
+}
+
+.logo_title {
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 0.03em;
+}
+
+.header__logo_title a {
+    color: var(--c-black);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+}
+
+.header__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+}
+
+.header__a {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    color: #242323;
+}
+
+.header__li:hover {
+    transform: scale(1.2);
+}
+
+.header__button {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.03em;
+    color: #fefefe;
+    border-radius: 7px;
+    background: var(--c-black);
+    padding: 13px 22px 17px;
+}
+
+.welcome__container {
+    display: flex;
+    justify-content: space-between;
+    background: #f4f6f5;
+    border-radius: 59px;
+    padding: 77px 81px 0px 119px;
+}
+
+.welcome__info {
+    position: relative;
+}
+
+.welcome__info .white_rect {
+    position: absolute;
+    max-width: 541px;
+    left: -7%;
+    top: -3%;
+    z-index: auto;
+}
+
+.welcome__info .yellow_rect {
+    position: absolute;
+    max-width: 541px;
+    left: -5%;
+    top: 28%;
+    z-index: auto;
+}
+
+.welcome__title {
+    max-width: 474px;
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 125%;
+    color: var(--c-black);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.welcome__desc {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: -0.05em;
+    color: #191818;
+    margin-bottom: 32px;
+}
+
+.welcome__button_box {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.welcome__button {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: -0.05em;
+    color: var(--c-white);
+    background: var(--c-black);
+    border-radius: 10px;
+    padding: 18px 40px;
+}
+
+.welcome__image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.welcome__image .star {
+    position: absolute;
+    max-width: 58px;
+}
+
+.welcome__image .upleft_star {
+    top: -1%;
+    left: -3%;
+}
+
+.welcome__image .upright_star {
+    top: 5%;
+    right: 17%;
+}
+
+.welcome__image .downleft_star {
+    bottom: 5%;
+    left: 2%;
+}
+
+.welcome__image .downright_star {
+    bottom: 13%;
+    right: -1%;
+}

@@ -1,0 +1,112 @@
+.advert {
+    max-width: 1920px;
+    margin-inline: auto;
+    margin-bottom: 190px;
+}
+
+.advert__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(360deg, #e0c340 0%, #dfc23e 3.93%, #e1c441 7.23%, #e3c743 10.23%, #e4c542 13.14%, #e6c744 16.22%, #e7c845 19.84%, #e5c643 24.38%, #e6c945 31%, #e3c743 37.19%, #e9ca48 43.33%, #edce49 50.36%, #f0d44c 56.57%, #f4d84f 62.71%, #f6da52 67.12%, #f7db53 73.77%, #f9dd55 79.08%, #f9df56 85.64%, #fae157 93.5%, #f9df56 100%);
+}
+
+.advert__image {
+    display: flex;
+    align-self: stretch;
+    position: relative;
+}
+
+.advert__girl {
+    /* object-fit: cover; */
+}
+
+.advert__info_box {
+    align-self: stretch;
+    max-width: 932px;
+    padding: 110px 185px 130px 66px;
+}
+
+.advert__info {
+    font-family: var(--main-font);
+    padding: 15px 20px;
+    position: relative;
+}
+
+.advert__info .white_rect {
+    position: absolute;
+    max-width: 541px;
+    left: 0;
+    top: 0;
+    z-index: auto;
+}
+
+.advert__title {
+    font-weight: 900;
+    font-size: 111px;
+    line-height: 123%;
+    color: var(--c-black);
+    margin-bottom: 33px;
+    position: relative;
+}
+
+#advert__offer {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 145%;
+    letter-spacing: -0.02em;
+    color: #231300;
+    margin-bottom: 40px;
+}
+
+#advert__date {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 145%;
+    letter-spacing: 0.02em;
+    color: var(--c-black);
+}
+
+#advert__cond {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 145%;
+    letter-spacing: -0.02em;
+    color: var(--c-black);
+    margin-bottom: 51px;
+}
+
+.advert__button {
+    font-weight: 600;
+    font-size: 27px;
+    letter-spacing: 0.02em;
+    color: var(--c-white);
+    background: var(--c-black);
+    border-radius: 8px;
+    padding: 32px 51px;
+}
+
+.advert__image .star {
+    position: absolute;
+    max-width: 76px;
+}
+
+.advert__image .upleft_star {
+    left: 15%;
+    top: 18%;
+}
+
+.advert__image .upright_star {
+    right: 17%;
+    top: 9%;
+}
+
+.advert__image .downleft_star {
+    left: 20%;
+    bottom: 40%;
+}
+
+.advert__image .downright_star {
+    right: 10%;
+    bottom: 25%;
+}

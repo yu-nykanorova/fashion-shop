@@ -1,0 +1,20 @@
+// breakpoints
+$desktop: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+:root {
+	--main-font: Poppins, sans-serif;
+	--second-font: Roboto, sans-serif;
+    --third-font: "Inter", sans-serif;
+	
+	--transition: .2s all ease-in-out;
+
+	--c-white: #fff;
+	--c-black: #000;
+    --c-yellow-main: #ebd96b;
+    --c-yellow-second: #e5c643;
+}
+
+
