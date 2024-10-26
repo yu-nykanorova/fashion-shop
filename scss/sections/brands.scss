@@ -1,18 +1,23 @@
 .brands {
-    max-width: 1920px;
-    margin-inline: auto;
     margin-bottom: 69px;
-    padding: 61px 171px 54px;
     background: var(--c-yellow-main);
+
+    &__container {
+        padding: 57px 171px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        gap: 121px;
+    }
+
+    &__item {
+        
+        &:hover {
+            transform: scale(1.5);
+        }
+    } 
 }
 
-.brands__container {
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-    gap: 121px;
-}
-
-.brands__item:hover {
-    transform: scale(1.5);
-}

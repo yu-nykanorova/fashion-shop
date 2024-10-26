@@ -1,65 +1,64 @@
 .join {
-    max-width: 1920px;
-    margin-inline: auto;
     background: var(--c-yellow-second);
+
+    &__container {
+        padding: 141px 460px 156px;
+        text-align: center;
+        font-family: var(--main-font);
+    }
+    
+    &__title {
+        font-weight: 900;
+        font-size: 55px;
+        line-height: 127%;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: var(--c-white);
+        margin-bottom: 37px;
+    }
+    
+    &__desc {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 109%;
+        letter-spacing: 0.03em;
+        color: #fffcf8;
+        margin-bottom: 49px;
+    }
+    &__email {
+        max-width: 574px;
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-between;
+        background: var(--c-white);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    &__email input {
+        border: none;
+    }
+    
+    
+    &__email input[placeholder] {
+        font-family: var(--main-font);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 146%;
+        letter-spacing: 0.03em;
+        color: #767676;
+    }
+    
+    &__button {
+        font-weight: 500;
+        font-size: 33px;
+        line-height: 106%;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        color: var(--c-white);
+        background: var(--c-black);
+        border-radius: 8px;
+        padding: 16px 35px;
+    }
 }
 
-.join__container {
-    padding: 141px 460px 156px;
-    text-align: center;
-    font-family: var(--main-font);
-}
-
-.join__title {
-    font-weight: 900;
-    font-size: 55px;
-    line-height: 127%;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--c-white);
-    margin-bottom: 37px;
-}
-
-.join__desc {
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 109%;
-    letter-spacing: 0.03em;
-    color: #fffcf8;
-    margin-bottom: 49px;
-}
-.join__email {
-    max-width: 574px;
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-between;
-    background: var(--c-white);
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.join__email input {
-    border: none;
-}
-
-
-.join__email input[placeholder] {
-    font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 146%;
-    letter-spacing: 0.03em;
-    color: #767676;
-}
-
-.join__button {
-    font-weight: 500;
-    font-size: 33px;
-    line-height: 106%;
-    letter-spacing: 0.03em;
-    text-transform: capitalize;
-    color: var(--c-white);
-    background: var(--c-black);
-    border-radius: 8px;
-    padding: 16px 35px;
-}

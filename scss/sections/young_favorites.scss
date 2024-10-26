@@ -1,69 +1,72 @@
 .young-fav {
-    max-width: 1920px;
-    margin-inline: auto;
     margin-bottom: 200px;
+
+    &__container {
+        padding: 0 100px;
+    }
+    
+    &__title {
+        font-family: var(--main-font);
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 104%;
+        letter-spacing: 0.06em;
+        color: var(--c-black);
+        margin-bottom: 118px;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 12px;
+
+        & .yellow_wave1 {
+            position: absolute;
+            max-width: 190px;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+    
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 47px;
+    }
+    
+    &__item_box {
+        flex: 0 1 calc((100% - 47px)/2);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__item_image {
+        border-radius: 20px;
+        margin-bottom: 28px;
+        cursor: pointer;
+
+        & img {
+            border-radius: 20px;
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 5px 1px rgba(0, 0, 0, 1), 0 0 20px 0 rgba(235, 217, 107, 0.5);
+            }
+        }
+    }
+      
+    &__item_desc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    &__item_text h3 {
+        font-family: var(--main-font);
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 156%;
+        letter-spacing: -0.04em;
+        color: var(--c-black);
+    }
 }
 
-.young-fav__container {
-    padding: 0 100px;
-}
-
-.young-fav__title {
-    font-family: var(--main-font);
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 104%;
-    letter-spacing: 0.06em;
-    color: var(--c-black);
-    margin-bottom: 118px;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 12px;
-}
-
-.young-fav__title .yellow_wave1 {
-    position: absolute;
-    max-width: 190px;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-.young-fav__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 47px;
-}
-
-.young-fav__item_box {
-    flex: 0 1 calc((100% - 47px)/2);
-    display: flex;
-    flex-direction: column;
-}
-
-.young-fav__item_image {
-    border-radius: 20px;
-    margin-bottom: 28px;
-    cursor: pointer;
-}
-
-.young-fav__item_image img {
-    border-radius: 20px;
-}
-
-.young-fav__item_desc {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-}
-
-.young-fav__item_text h3 {
-    font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 156%;
-    letter-spacing: -0.04em;
-    color: var(--c-black);
-}

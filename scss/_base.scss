@@ -14,6 +14,7 @@ body {
 	font-family: var(--main-font);
 	background: var(--c-white);
     color: var(--c-black);
+    transition: var(--transition);
 }
 
 .btn {
@@ -21,4 +22,19 @@ body {
     border: 0;
     outline: 0;
     cursor: pointer;
+}
+
+.container {
+    border: 5px solid purple;
+    max-width: 1920px;
+    margin-inline: auto;
+}
+
+.explore_now {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: -0.04em;
+    color: #7f7f7f;
 }

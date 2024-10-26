@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 46px 100px 56px;
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+    .logo_title {
+        font-family: var(--main-font);
+        font-weight: 900;
+        font-size: 40px;
+        letter-spacing: 0.03em;
+    }
+    
+    &__logo_title a {
+        color: var(--c-black);
+    }
+    
+    &__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 54px;
+    }
+    
+    &__ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 65px;
+    }
+    
+    &__a {
+        font-family: var(--main-font);
+        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: 0.01em;
+        color: #242323;
+    }
+    
+    &__li:hover {
+        transform: scale(1.2);
+    }
+    
+    &__button {
+        font-family: var(--main-font);
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: -0.03em;
+        color: #fefefe;
+        border-radius: 7px;
+        background: var(--c-black);
+        padding: 13px 22px 17px;
+    }
+}    
