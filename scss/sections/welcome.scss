@@ -8,6 +8,7 @@
     &__banner {
         display: flex;
         justify-content: space-between;
+        gap: 43px;
         background: #f4f6f5;
         border-radius: 59px;
         padding: 77px 81px 0px 119px;
@@ -15,6 +16,7 @@
     
     &__title_box {
         position: relative;
+        z-index: 2;
 
         & .white_rect {
             position: absolute;
@@ -73,7 +75,13 @@
     &__image {
         display: flex;
         justify-content: center;
+        align-self: stretch;
         position: relative;
+        img:first-of-type {
+            //align-self: flex-end;
+            object-fit: cover;
+            overflow: visible;
+        }
     }
     
     &__image .star {

@@ -5,6 +5,12 @@
     }
   }
 
+@mixin desktop-small {
+    @media (max-width: $desktop-small) {
+      @content;
+    }
+  }
+
   @mixin tablet {
     @media (max-width: $tablet) {
       @content;

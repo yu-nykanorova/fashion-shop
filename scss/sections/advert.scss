@@ -9,17 +9,19 @@
     }
     
     &__image {
+        align-self: stretch;
+        flex-shrink: 0.5;
         display: flex;
         position: relative;
     }
     
-    // &__poster {
-    //     /* object-fit: cover; */
-    // }
+    &__poster {
+        object-fit: cover;
+    }
     
     &__info {
         font-family: var(--main-font);
-        padding: 128px 200px 155px 0;
+        padding: 128px 200px 155px 10px;
         position: relative;
     }
     

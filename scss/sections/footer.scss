@@ -34,14 +34,14 @@
         max-width: 250px;
 
         & img:hover {
-            transform: scale(1.2);
+            transform: scale(1.09);
         }
     }
     
     &__nav {
         font-family: var(--second-font);
         display: flex;
-        gap: 188px;
+        gap: 168px;
     }
     
     &__ul {
@@ -50,15 +50,9 @@
         justify-content: center;
         gap: 32px;
     }
-    
-    &__li a {
-        padding-left: 5px;
-    }
-    
-    &__li:hover:not(.footer__nav_title) {
-        box-shadow: 0 0 15px 0 #d9d9d9;
-        border-radius: 8px;
-        transform: scale(1.05);
+
+    &__li:not(.footer__nav_title) a:hover {
+        color: var(--c-yellow-main);
     }
     
     &__a {
@@ -67,9 +61,6 @@
         line-height: 167%;
         letter-spacing: 0.02em;
         color: #8e8e8e;
-        &:hover {
-            color: #d9d9d9;
-        }
     }
     
     &__nav_title a {

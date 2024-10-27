@@ -10,15 +10,8 @@
         align-items: center;
         gap: 13px;
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.08);
         }
-    }
-    
-    .logo_title {
-        font-family: var(--main-font);
-        font-weight: 900;
-        font-size: 40px;
-        letter-spacing: 0.03em;
     }
     
     &__logo_title a {
@@ -45,10 +38,13 @@
         font-size: 22px;
         letter-spacing: 0.01em;
         color: #242323;
+        &:hover {
+            color: var(--c-yellow-second);
+        }
     }
     
     &__li:hover {
-        transform: scale(1.2);
+        transform: scale(1.09);
     }
     
     &__button {
@@ -60,5 +56,11 @@
         border-radius: 7px;
         background: var(--c-black);
         padding: 13px 22px 17px;
+
+        &:hover {
+            transform: scale(1.05);
+            background: var(--c-yellow-main);
+            color: var(--c-black);
+        }
     }
 }    

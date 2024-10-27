@@ -47,8 +47,8 @@
         & img {
             border-radius: 20px;
             &:hover {
-                transform: scale(1.05);
-                box-shadow: 0 0 5px 1px rgba(0, 0, 0, 1), 0 0 20px 0 rgba(235, 217, 107, 0.5);
+                transform: scale(1.02);
+                box-shadow: 0 0 2px 1px rgba(67, 62, 4, 0.5), 0 0 20px 0 rgba(235, 217, 107, 0.5);
             }
         }
     }
@@ -58,6 +58,16 @@
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
+
+        &:hover .young-fav__item_text p {
+            color: var(--c-yellow-main);
+        }
+        &:hover .young-fav__item_arrow {
+            transform: scale(1.2);
+        }
+        &:hover .young-fav__item_arrow .arrow svg path {
+            fill: var(--c-yellow-main);
+        }
     }
     
     &__item_text h3 {

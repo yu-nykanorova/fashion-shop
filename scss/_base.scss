@@ -30,6 +30,13 @@ body {
     margin-inline: auto;
 }
 
+.logo_title {
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 0.03em;
+}
+
 .explore_now {
     font-family: var(--main-font);
     font-weight: 500;
@@ -38,3 +45,4 @@ body {
     letter-spacing: -0.04em;
     color: #7f7f7f;
 }
+

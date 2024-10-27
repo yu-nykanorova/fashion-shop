@@ -30,6 +30,7 @@
         margin-inline: auto;
         display: flex;
         justify-content: space-between;
+        gap: 10px;
         background: var(--c-white);
         border-radius: 10px;
         padding: 10px;
@@ -37,6 +38,8 @@
     
     &__email input {
         border: none;
+        outline: none;
+        flex: 1;
     }
     
     
