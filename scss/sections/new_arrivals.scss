@@ -7,12 +7,18 @@
     @include desktop-small {
         margin-bottom: 100px;
     }
+    @include tablet-small {
+        margin-bottom: 40px;
+    }
 
     &__container {
         padding: 0 104px;
 
         @include desktop {
             padding-inline: 60px;
+        }
+        @include tablet {
+            padding-inline: 30px;
         }
     }
     
@@ -31,6 +37,10 @@
 
         @include desktop {
             margin-bottom: 70px;
+        }
+        @include tablet {
+            margin-bottom: 50px;
+            font-size: 40px;
         }
     }
     
@@ -52,6 +62,9 @@
             justify-content: space-between;
             gap: 60px;
         }
+        @include tablet {
+            gap: 30px;
+        }
     }
     
     &__item_box {
@@ -61,6 +74,9 @@
 
         @include desktop {
             flex: 0 1 calc((100% - 60px * 2)/3);
+        }
+        @include tablet {
+            flex: 0 1 calc((100% - 30px * 2)/3);
         }
     }
     

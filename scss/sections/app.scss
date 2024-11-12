@@ -7,6 +7,9 @@
     @include desktop-small {
         margin-bottom: 100px;
     }
+    @include tablet-small {
+        margin-bottom: 40px;
+    }
 
     &__container {
         padding: 0 218px;
@@ -19,6 +22,9 @@
         }
         @include desktop-small {
             padding-inline: 100px;
+        }
+        @include tablet {
+            padding-inline: 50px;
         }
     }
     &__info {
@@ -39,6 +45,13 @@
             line-height: 120%;
             margin-bottom: 36px;
         }
+        @include tablet {
+            font-size: 38px;
+        }
+        @include tablet-small {
+            font-size: 28px;
+            margin-bottom: 28px;
+        }
     }
     &__desc {
         font-weight: 500;
@@ -51,15 +64,31 @@
         @include desktop-small {
             margin-bottom: 36px;
         }
+        @include tablet {
+            font-size: 20px;
+        }
+        @include tablet-small {
+            margin-bottom: 28px;
+        }
     }
     &__download {
         max-width: 420px;
         display: flex;
         justify-content: space-between;
 
-        & a:hover {
+        a {
+            @include tablet {
+                max-width: 180px;
+            }
+            @include tablet {
+                max-width: 140px;
+            }
+        }
+
+        a:hover {
             transform: scale(1.05);
         }
+
     }
     
     &__image {
@@ -97,6 +126,10 @@
             max-width: 34px;
             bottom: 11%;
             left: -17%;
+
+            @include tablet {
+                left: -5%;
+            }
         }
         
         .ellipse_small-grey {

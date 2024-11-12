@@ -25,7 +25,6 @@ body {
 }
 
 .container {
-    border: 5px solid purple;
     max-width: 1920px;
     margin-inline: auto;
 }
@@ -73,6 +72,9 @@ body {
     }
     @include desktop-small {
         font-size: 24px;
+    }
+    @include tablet-small {
+        font-size: 22px;
     }
 }
 

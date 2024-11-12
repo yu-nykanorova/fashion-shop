@@ -15,6 +15,9 @@
             flex-direction: column;
             gap: 50px;
         }
+        @include tablet {
+            padding: 40px 30px;
+        }
     }
     
     &__info {
@@ -29,6 +32,10 @@
             align-items: center;
             max-width: 100%;
         }
+        @include tablet {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
     
     &__logo_title a {
@@ -42,9 +49,12 @@
         line-height: 167%;
         letter-spacing: 0.02em;
         color: #8e8e8e;
-
+ 
         @include desktop-small {
             text-align: center;
+        }
+        @include tablet {
+            font-size: 18px;
         }
     }
     
@@ -53,6 +63,10 @@
         align-items: center;
         gap: 14px;
         max-width: 250px;
+
+        @include tablet-small {
+            max-width: 200px;
+        }
 
         & img:hover {
             transform: scale(1.09);
@@ -69,8 +83,18 @@
             justify-content: space-between;
         }
 
-        @include desktop-small {
-            gap: 40px;
+        @include tablet {
+            gap: 20px;
+        }
+
+        &_company, &_guides, &_legal {
+
+            @include desktop {
+                flex: calc((100% - 40px * 2) / 3);
+            }
+            @include tablet {
+                flex: calc((100% - 20px * 2) / 3);
+            }
         }
     }
     
@@ -82,6 +106,9 @@
 
         @include desktop-small {
             align-items: center;
+        }
+        @include tablet {
+            gap: 20px;
         }
     }
 
@@ -95,6 +122,10 @@
         line-height: 167%;
         letter-spacing: 0.02em;
         color: #8e8e8e;
+
+        @include tablet {
+            font-size: 18px;
+        }
     }
     
     &__nav_title a {
