@@ -1,8 +1,19 @@
 .new-arriv {
     margin-bottom: 190px;
 
+    @include desktop {
+        margin-bottom: 150px;
+    }
+    @include desktop-small {
+        margin-bottom: 100px;
+    }
+
     &__container {
         padding: 0 104px;
+
+        @include desktop {
+            padding-inline: 60px;
+        }
     }
     
     &__title {
@@ -17,6 +28,10 @@
         display: inline-block;
         padding-bottom: 8px;
         padding-right: 8px;
+
+        @include desktop {
+            margin-bottom: 70px;
+        }
     }
     
     &__title .yellow_wave2 {
@@ -32,12 +47,21 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 90px;
+
+        @include desktop {
+            justify-content: space-between;
+            gap: 60px;
+        }
     }
     
     &__item_box {
         flex: 0 1 calc((100% - 90px * 2)/3);
         display: flex;
         flex-direction: column;
+
+        @include desktop {
+            flex: 0 1 calc((100% - 60px * 2)/3);
+        }
     }
     
     &__item_image {
@@ -52,6 +76,10 @@
                 transform: scale(1.02);
                 box-shadow: 0 0 2px 1px rgba(67, 62, 4, 0.5), 0 0 20px 0 rgba(235, 217, 107, 0.5);
             }
+        }
+
+        @include desktop {
+            margin-bottom: 16px;
         }
     }
     
@@ -70,29 +98,6 @@
         &:hover .new-arriv__item_arrow .arrow svg path {
             fill: var(--c-yellow-main);
         }
-    }
-
-    // &__item_text:hover > h3 {
-    //     color: var(--c-yellow-main);
-    // }
-
-    // &__item_text:hover + &__item_arrow {
-    //     
-    // }
-    
-    &__item_text h3 {
-        font-family: var(--main-font);
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 156%;
-        letter-spacing: -0.04em;
-        color: #191919;
-    }
-
-    &__item_arrow {
-        align-self: stretch;
-        display: flex;
-        align-items: center;
     }
 }
 

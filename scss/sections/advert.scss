@@ -2,6 +2,14 @@
     margin-bottom: 190px;
     background: linear-gradient(360deg, #e0c340 0%, #dfc23e 3.93%, #e1c441 7.23%, #e3c743 10.23%, #e4c542 13.14%, #e6c744 16.22%, #e7c845 19.84%, #e5c643 24.38%, #e6c945 31%, #e3c743 37.19%, #e9ca48 43.33%, #edce49 50.36%, #f0d44c 56.57%, #f4d84f 62.71%, #f6da52 67.12%, #f7db53 73.77%, #f9dd55 79.08%, #f9df56 85.64%, #fae157 93.5%, #f9df56 100%);
     
+    @include desktop {
+        margin-bottom: 150px;
+    }
+
+    @include desktop-small {
+        margin-bottom: 100px;
+    }
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -13,6 +21,10 @@
         flex-shrink: 0.5;
         display: flex;
         position: relative;
+
+        @include desktop {
+            flex: 60%;
+        }
     }
     
     &__poster {
@@ -23,6 +35,10 @@
         font-family: var(--main-font);
         padding: 128px 200px 155px 10px;
         position: relative;
+
+        @include desktop {
+            padding: 80px 60px 80px 10px;
+        }
     }
     
     &__info .white_rect {
@@ -31,6 +47,14 @@
         left: -3%;
         top: 12%;
         z-index: auto;
+        @include desktop {
+            top: 6%;
+        }
+        @include desktop-small {
+            max-width: 350px;
+            top: 11%;
+            left: 0;
+        }
     }
     
     &__title {
@@ -41,6 +65,14 @@
         color: var(--c-black);
         margin-bottom: 33px;
         position: relative;
+
+        @include desktop {
+            font-size: 80px;
+        }
+        @include desktop-small {
+            font-size: 70px;
+            font-weight: 800;
+        }
     }
 
     &__desc {
@@ -52,6 +84,10 @@
             letter-spacing: -0.02em;
             color: #231300;
             margin-bottom: 40px;
+
+            @include desktop {
+                font-size: 30px;
+            }
         }
         
         #advert__date {
@@ -60,6 +96,10 @@
             line-height: 145%;
             letter-spacing: 0.02em;
             color: var(--c-black);
+
+            @include desktop {
+                font-size: 30px;
+            }
         }
         
         #advert__cond {
@@ -69,6 +109,10 @@
             letter-spacing: -0.02em;
             color: var(--c-black);
             margin-bottom: 51px;
+
+            @include desktop {
+                font-size: 30px;
+            }
         }
     }
     
@@ -80,6 +124,10 @@
         background: var(--c-black);
         border-radius: 8px;
         padding: 32px 51px;
+
+        @include desktop-small {
+            padding: 22px 40px;
+        }
     }
     
     &__image .star {
@@ -95,16 +143,25 @@
     &__image .upright_star {
         right: 17%;
         top: 9%;
+        @include desktop {
+            right: 10%;
+        }
     }
     
     &__image .downleft_star {
         left: 20%;
         bottom: 40%;
+        @include desktop {
+            left: 10%;
+        }
     }
     
     &__image .downright_star {
         right: 10%;
         bottom: 25%;
+        @include desktop {
+            right: 5%;
+        }
     }
 }
 

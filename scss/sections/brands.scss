@@ -3,7 +3,11 @@
     background: var(--c-yellow-main);
 
     &__container {
-        padding: 57px 171px;
+        padding: 50px 171px;
+
+        @include desktop {
+            padding: 25px 60px;
+        }
     }
 
     &__list {
@@ -11,12 +15,16 @@
         justify-content: baseline;
         align-items: center;
         gap: 121px;
+
+        @include desktop {
+            gap: 80px;
+        }
     }
 
     &__item {
-        
+
         &:hover {
-            transform: scale(1.5);
+            transform: scale(1.2);
         }
     } 
 }

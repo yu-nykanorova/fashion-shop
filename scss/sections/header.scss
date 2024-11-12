@@ -4,11 +4,21 @@
     align-items: center;
     margin: 46px 100px 56px;
 
+    @include desktop {
+        margin-inline: 60px;
+    }
+    @include desktop-small {
+        margin-top: 30px;
+        margin-top: 40px;
+        gap: 10px;
+    }
+
     &__logo {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 13px;
+        flex-shrink: 0;
         &:hover {
             transform: scale(1.08);
         }
@@ -23,6 +33,16 @@
         justify-content: center;
         align-items: center;
         gap: 54px;
+        
+        @include desktop {
+            gap: 30px;
+        }
+        @include desktop-small {
+            gap: 20px;
+        }
+        @include tablet {
+            gap: 50px;
+        }
     }
     
     &__ul {
@@ -30,6 +50,16 @@
         justify-content: center;
         align-items: center;
         gap: 65px;
+
+        @include desktop {
+            gap: 30px;
+        }
+        @include desktop-small {
+            gap: 20px;
+        }
+        @include tablet {
+            display: none;
+        }
     }
     
     &__a {
@@ -41,10 +71,48 @@
         &:hover {
             color: var(--c-yellow-second);
         }
+
+        @include desktop-small {
+            font-size: 18px;
+            font-weight: 600;
+        }
     }
     
     &__li:hover {
         transform: scale(1.09);
+    }
+
+    &__burger {
+        display: none;
+        width: 28px;
+        height: 28px;
+        position: relative;
+        span {
+            display: block;
+            position: absolute;
+            top: calc(50% - 1px);
+            width: 100%;
+            height: 3px;
+            background: var(--c-black);
+        }
+
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: var(--c-black);
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+
+        @include tablet {
+            display: block;
+        }
     }
     
     &__button {
@@ -61,6 +129,11 @@
             transform: scale(1.05);
             background: var(--c-yellow-main);
             color: var(--c-black);
+        }
+
+        @include desktop-small {
+            font-size: 22px;
+            padding: 14px 18px;
         }
     }
 }    

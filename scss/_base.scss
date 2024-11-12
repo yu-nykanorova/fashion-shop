@@ -35,6 +35,10 @@ body {
     font-weight: 900;
     font-size: 40px;
     letter-spacing: 0.03em;
+
+    @include desktop-small {
+        font-size: 36px;
+    }
 }
 
 .explore_now {
@@ -44,5 +48,31 @@ body {
     line-height: 208%;
     letter-spacing: -0.04em;
     color: #7f7f7f;
+
+    @include desktop {
+        font-size: 20px;
+    }
+}
+
+.item_arrow {
+    align-self: stretch;
+    display: flex;
+    align-items: center;    
+}
+
+.item_title {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 156%;
+    letter-spacing: -0.04em;
+    color: var(--c-black);
+
+    @include desktop {
+        font-size: 26px;
+    }
+    @include desktop-small {
+        font-size: 24px;
+    }
 }
 

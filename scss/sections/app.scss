@@ -1,11 +1,25 @@
 .app {
     margin-bottom: 200px;
 
+    @include desktop {
+        margin-bottom: 150px;
+    }
+    @include desktop-small {
+        margin-bottom: 100px;
+    }
+
     &__container {
         padding: 0 218px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include desktop {
+            padding-inline: 120px;
+        }
+        @include desktop-small {
+            padding-inline: 100px;
+        }
     }
     &__info {
         font-family: var(--main-font);
@@ -19,6 +33,12 @@
         letter-spacing: 0.06em;
         color: var(--c-black);
         margin-bottom: 41px;
+
+        @include desktop-small {
+            font-size: 44px;
+            line-height: 120%;
+            margin-bottom: 36px;
+        }
     }
     &__desc {
         font-weight: 500;
@@ -27,11 +47,16 @@
         letter-spacing: -0.04em;
         color: #7c7c7c;
         margin-bottom: 65px;
+
+        @include desktop-small {
+            margin-bottom: 36px;
+        }
     }
     &__download {
         max-width: 420px;
         display: flex;
         justify-content: space-between;
+
         & a:hover {
             transform: scale(1.05);
         }
@@ -40,58 +65,45 @@
     &__image {
         position: relative;
 
-        img {
+        .mobile_app {
             max-width: 500px;
         }
-    }
+
+        .rings {
+            position: absolute;
+            top: 13%;
+            left: -14%;
+            width: 130%;
+            z-index: -1;
+        }
     
-    .ring_large {
-        position: absolute;
-        top: 13%;
-        right: -13%;
-        z-index: -1;
-    }
-    
-    .ring_medium {
-        position: absolute;
-        top: 19%;
-        right: -3%;
-        z-index: -1;
-    }
-    
-    .ring_small {
-        position: absolute;
-        top: 25%;
-        right: 6%;
-        z-index: -1;
-    }
-    
-    &__image .ellipse {
-        position: absolute;
-    }
-    
-    .ellipse_large-grey {
-        max-width: 22px;
-        top: 16%;
-        left: -15%;
-    }
-    
-    .ellipse_large-yellow {
-        max-width: 50px;
-        top: 15%;
-        right: -10%;
-    }
-    
-    .ellipse_small-yellow {
-        max-width: 34px;
-        bottom: 11%;
-        left: -17%;
-    }
-    
-    .ellipse_small-grey {
-        max-width: 17px;
-        bottom: 22%;
-        right: -15%;
+        .ellipse {
+            position: absolute;
+        }
+        
+        .ellipse_large-grey {
+            max-width: 22px;
+            top: 16%;
+            left: -15%;
+        }
+        
+        .ellipse_large-yellow {
+            max-width: 50px;
+            top: 15%;
+            right: -10%;
+        }
+        
+        .ellipse_small-yellow {
+            max-width: 34px;
+            bottom: 11%;
+            left: -17%;
+        }
+        
+        .ellipse_small-grey {
+            max-width: 17px;
+            bottom: 22%;
+            right: -15%;
+        }
     }
 }
 

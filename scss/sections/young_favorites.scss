@@ -1,8 +1,19 @@
 .young-fav {
     margin-bottom: 200px;
 
+    @include desktop {
+        margin-bottom: 150px;
+    }
+    @include desktop-small {
+        margin-bottom: 100px;
+    }
+
     &__container {
         padding: 0 100px;
+
+        @include desktop {
+            padding-inline: 60px;
+        }
     }
     
     &__title {
@@ -24,6 +35,10 @@
             bottom: 0;
             z-index: -1;
         }
+
+        @include desktop {
+            margin-bottom: 70px;
+        }
     }
     
     &__items {
@@ -31,6 +46,10 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 47px;
+
+        @include desktop {
+            justify-content: space-between;
+        }
     }
     
     &__item_box {
@@ -51,6 +70,10 @@
                 box-shadow: 0 0 2px 1px rgba(67, 62, 4, 0.5), 0 0 20px 0 rgba(235, 217, 107, 0.5);
             }
         }
+
+        @include desktop {
+            margin-bottom: 16px;
+        }
     }
       
     &__item_desc {
@@ -68,15 +91,6 @@
         &:hover .young-fav__item_arrow .arrow svg path {
             fill: var(--c-yellow-main);
         }
-    }
-    
-    &__item_text h3 {
-        font-family: var(--main-font);
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 156%;
-        letter-spacing: -0.04em;
-        color: var(--c-black);
     }
 }
 

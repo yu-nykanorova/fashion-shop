@@ -3,34 +3,47 @@
     
     &__container {
         padding-inline: 100px;
+        
+        @include desktop {
+            padding-inline: 50px;
+        }
     }
 
     &__banner {
         display: flex;
         justify-content: space-between;
         gap: 43px;
+        align-items: center;
         background: #f4f6f5;
         border-radius: 59px;
         padding: 77px 81px 0px 119px;
+
+        @include desktop {
+            padding: 50px 60px 0px;
+        }
+        @include desktop-small {
+            flex-direction: column;
+            gap: initial;
+        }
     }
     
     &__title_box {
         position: relative;
         z-index: 2;
 
-        & .white_rect {
+        .white_rect {
             position: absolute;
-            max-width: 541px;
+            max-width: 350px;
             left: -6%;
-            top: -2%;
+            top: -5%;
             z-index: auto;
         }
         
-        & .yellow_rect {
+        .yellow_rect {
             position: absolute;
-            max-width: 541px;
+            max-width: 350px;
             left: -5%;
-            bottom: 25%;
+            bottom: -5%;
             z-index: auto;
         }
     }
@@ -44,6 +57,16 @@
         color: var(--c-black);
         margin-bottom: 40px;
         position: relative;
+
+        @include desktop {
+            font-size: 70px;
+            margin-bottom: 30px;
+        }
+        @include desktop-small {
+            max-width: 100%;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
     }
     
     &__desc {
@@ -53,12 +76,25 @@
         letter-spacing: -0.05em;
         color: #191818;
         margin-bottom: 32px;
+
+        @include desktop {
+            font-size: 26px;
+        }
     }
     
     &__button_box {
         display: flex;
         align-items: center;
         gap: 34px;
+        margin-bottom: 90px;
+
+        @include desktop {
+            margin-bottom: 60px;
+            gap: 30px;
+        }
+        @include desktop-small {
+            margin-bottom: 10px;
+        }
     }
     
     &__button {
@@ -66,10 +102,23 @@
         font-weight: 500;
         font-size: 30px;
         letter-spacing: -0.05em;
+        text-align: center;
         color: var(--c-white);
         background: var(--c-black);
         border-radius: 10px;
         padding: 18px 40px;
+
+        @include desktop {
+            padding-inline: 20px;
+            font-size: 26px;
+            font-weight: 400;
+            flex: 55%;
+        }
+        @include desktop-small {
+            font-size: 24px;
+            flex: initial;
+            padding-inline: 40px;
+        }
     }
     
     &__image {
@@ -77,10 +126,17 @@
         justify-content: center;
         align-self: stretch;
         position: relative;
+
         img:first-of-type {
-            //align-self: flex-end;
             object-fit: cover;
-            overflow: visible;
+        }
+
+        @include desktop {
+            flex-shrink: 0.6;
+            align-self: flex-end;
+        }
+        @include desktop-small {
+            flex-shrink: initial;
         }
     }
     
