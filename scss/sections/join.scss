@@ -12,6 +12,9 @@
         @include tablet {
             padding: 40px 30px;
         }
+        @include tablet-small {
+            padding: 30px;
+        }
     }
     
     &__title {
@@ -27,14 +30,11 @@
             font-size: 48px;
         }
         @include tablet {
-            padding: 40px;
             margin-bottom: 20px;
             font-size: 40px;
         }
         @include tablet-small {
-            padding: 20px;
-            margin-bottom: 20px;
-            font-size: 34px;
+            font-size: 32px;
         }
     }
     
@@ -49,6 +49,9 @@
         @include tablet {
             font-size: 24px;
             margin-bottom: 36px;
+        }
+        @include tablet-small {
+            font-size: 20px;
         }
     }
     &__email {

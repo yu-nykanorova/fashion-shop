@@ -70,7 +70,7 @@
         @include tablet-small {
             max-width: 280px;
             top: 6%;
-            left: 12%;
+            left: 5%;
         }
     }
     
@@ -94,6 +94,9 @@
             font-size: 60px;
             font-weight: 700;
         }
+        @include tablet-small {
+            font-size: 50px;
+        }
     }
 
     &__desc {
@@ -113,6 +116,9 @@
                 font-size: 22px;
                 font-weight: 400;
                 margin-bottom: 36px;
+            }
+            @include tablet-small {
+                margin-bottom: 30px;
             }
         }
         
@@ -146,6 +152,9 @@
                 margin-bottom: 36px;
                 font-size: 22px;
             }
+            @include tablet-small {
+                margin-bottom: 30px;
+            }
         }
     }
     
@@ -164,6 +173,11 @@
         @include tablet {
             font-size: 24px;
             padding: 20px 36px;
+        }
+        @include tablet-small {
+            font-size: 22px;
+            font-weight: 500;
+            padding: 14px 28px;
         }
     }
     
