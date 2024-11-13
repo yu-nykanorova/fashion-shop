@@ -14,6 +14,9 @@
         @include tablet {
             padding-inline: 30px;
         }
+        @include mobile {
+            padding-inline: 10px;
+        }
     }
 
     &__banner {
@@ -34,6 +37,9 @@
         }
         @include tablet-small {
             padding: 30px 30px 0px;
+        }
+        @include mobile {
+            padding: 20px 0 0;
         }
     }
 
@@ -61,6 +67,9 @@
             @include tablet-small {
                 max-width: 280px;
             }
+            @include mobile {
+                max-width: 180px;
+            }
         }
         
         .yellow_rect {
@@ -79,6 +88,10 @@
             }
             @include tablet-small {
                 max-width: 280px;
+            }
+            @include mobile {
+                max-width: 180px;
+                right: 5%;
             }
         }
     }
@@ -108,6 +121,10 @@
         @include tablet-small {
             font-size: 50px;
         }
+        @include mobile {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
     }
     
     &__desc {
@@ -126,6 +143,10 @@
         }
         @include tablet-small {
             margin-bottom: 22px;
+        }
+        @include mobile {
+            font-size: 16px;
+            margin-bottom: 10px;
         }
     }
     
@@ -181,6 +202,10 @@
             font-size: 20px;
             padding: 12px 28px;
         }
+        @include mobile {
+            font-size: 16px;
+            padding: 8px 18px;
+        }
     }
     
     &__image {
@@ -204,6 +229,9 @@
         @include tablet-small {
             max-width: 70%;
         }
+        @include mobile {
+            max-width: 80%;
+        }
     }
     
     &__image .star {
@@ -212,6 +240,9 @@
 
         @include tablet-small {
             max-width: 44px;
+        }
+        @include mobile {
+            max-width: 30px;
         }
     }
     

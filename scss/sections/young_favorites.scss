@@ -10,7 +10,7 @@
     @include tablet-small {
         margin-bottom: 40px;
     }
-
+    
     &__container {
         padding: 0 100px;
 
@@ -53,6 +53,10 @@
             margin-bottom: 40px;
             font-size: 30px;
         }
+        @include mobile {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
     }
     
     &__items {
@@ -76,6 +80,9 @@
         
         @include tablet-small {
             flex: 0 1 calc((100% - 20px)/2);
+        }
+        @include mobile {
+            flex: 0 1 100%;
         }
     }
     

@@ -15,6 +15,9 @@
     @include tablet {
         margin: 30px;
     }
+    @include mobile {
+        margin: 20px 10px;
+    }
 
     &__logo {
         display: flex;
@@ -24,6 +27,12 @@
         flex-shrink: 0;
         &:hover {
             transform: scale(1.08);
+        }
+
+        .logo_title {
+            @include mobile {
+                display: none;
+            }
         }
     }
     
@@ -36,6 +45,7 @@
         justify-content: center;
         align-items: center;
         gap: 54px;
+        position: relative;
         
         @include desktop {
             gap: 30px;
@@ -62,6 +72,8 @@
         }
         @include tablet {
             display: none;
+            position: absolute;
+            left: 0;
         }
     }
     
@@ -137,6 +149,11 @@
         @include desktop-small {
             font-size: 22px;
             padding: 14px 18px;
+        }
+        @include mobile {
+            font-size: 16px;
+            font-weight: 400;
+            padding: 10px 15px;
         }
     }
 }    

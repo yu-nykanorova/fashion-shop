@@ -46,6 +46,10 @@
             margin-bottom: 40px;
             font-size: 30px;
         }
+        @include mobile {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
     }
     
     &__title .yellow_wave2 {
@@ -81,6 +85,9 @@
         }
         @include tablet {
             flex: 0 1 calc((100% - 30px * 2)/3);
+        }
+        @include mobile {
+            flex: 0 1 100%;
         }
     }
     
