@@ -42,6 +42,10 @@
             margin-bottom: 50px;
             font-size: 40px;
         }
+        @include tablet-small {
+            margin-bottom: 40px;
+            font-size: 30px;
+        }
     }
     
     &__title .yellow_wave2 {

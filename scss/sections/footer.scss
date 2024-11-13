@@ -86,6 +86,9 @@
         @include tablet {
             gap: 20px;
         }
+        @include tablet-small {
+            gap: 10px;
+        }
 
         &_company, &_guides, &_legal {
 
@@ -94,6 +97,9 @@
             }
             @include tablet {
                 flex: calc((100% - 20px * 2) / 3);
+            }
+            @include tablet-small {
+                flex: calc((100% - 10px * 2) / 3);
             }
         }
     }

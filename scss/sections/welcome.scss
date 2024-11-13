@@ -58,6 +58,9 @@
                 max-width: 350px;
                 left: 5%;
             }
+            @include tablet-small {
+                max-width: 280px;
+            }
         }
         
         .yellow_rect {
@@ -69,9 +72,13 @@
             
             @include desktop-small {
                 max-width: 350px;
-                left: 60%;
+                left: initial;
                 bottom: initial;
+                right: 0;
                 top: 0;
+            }
+            @include tablet-small {
+                max-width: 280px;
             }
         }
     }
@@ -99,7 +106,7 @@
             font-size: 60px;
         }
         @include tablet-small {
-            font-size: 40px;
+            font-size: 50px;
         }
     }
     
@@ -116,6 +123,9 @@
         }
         @include tablet {
             font-size: 22px;
+        }
+        @include tablet-small {
+            margin-bottom: 22px;
         }
     }
     
@@ -167,6 +177,10 @@
             flex: initial;
             padding-inline: 40px;
         }
+        @include tablet-small {
+            font-size: 20px;
+            padding: 12px 28px;
+        }
     }
     
     &__image {
@@ -187,11 +201,18 @@
             align-self: center;
             max-width: 60%;
         }
+        @include tablet-small {
+            max-width: 70%;
+        }
     }
     
     &__image .star {
         position: absolute;
         max-width: 58px;
+
+        @include tablet-small {
+            max-width: 44px;
+        }
     }
     
     &__image .upleft_star {

@@ -83,6 +83,9 @@
             @include tablet {
                 max-width: 140px;
             }
+            @include tablet-small {
+                max-width: 120px;
+            }
         }
 
         a:hover {
@@ -120,6 +123,10 @@
             max-width: 50px;
             top: 15%;
             right: -10%;
+            @include tablet-small {
+                max-width: 40px;
+                top: 20%;
+            }
         }
         
         .ellipse_small-yellow {
@@ -129,6 +136,10 @@
 
             @include tablet {
                 left: -5%;
+            }
+            @include tablet-small {
+                max-width: 26px;
+                bottom: 18%;
             }
         }
         
