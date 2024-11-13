@@ -18,6 +18,9 @@
         @include tablet {
             padding: 40px 30px;
         }
+        @include tablet {
+            gap: 30px;
+        }
     }
     
     &__info {
@@ -89,6 +92,10 @@
         @include tablet-small {
             gap: 10px;
         }
+        @include mobile {
+            flex-direction: column;
+            gap: 20px;
+        }
 
         &_company, &_guides, &_legal {
 
@@ -115,6 +122,9 @@
         }
         @include tablet {
             gap: 20px;
+        }
+        @include mobile {
+            gap: 10px;
         }
     }
 

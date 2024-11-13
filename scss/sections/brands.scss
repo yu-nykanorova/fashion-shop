@@ -5,6 +5,9 @@
     @include tablet-small {
         margin-bottom: 30px;
     }
+    @include mobile {
+        margin-bottom: 20px;
+    }
 
     &__container {
         padding: 50px 171px;
@@ -14,6 +17,9 @@
         }
         @include tablet {
             padding-inline: 30px;
+        }
+        @include mobile {
+            padding-inline: 20px;
         }
     }
 
@@ -29,12 +35,21 @@
         @include tablet {
             gap: 30px;
         }
+        @include mobile {
+            flex-wrap: wrap;
+            row-gap: initial;
+            column-gap: 30px;
+        }
     }
 
     &__item {
 
         &:hover {
             transform: scale(1.2);
+        }
+
+        @include mobile {
+            flex: calc((100% - 30px * 2) / 3);
         }
     } 
 }

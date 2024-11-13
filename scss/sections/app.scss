@@ -26,6 +26,11 @@
         @include tablet {
             padding-inline: 50px;
         }
+        @include mobile {
+            padding-inline: 20px;
+            flex-direction: column;
+            text-align: center;
+        }
     }
     &__info {
         font-family: var(--main-font);
@@ -70,11 +75,18 @@
         @include tablet-small {
             margin-bottom: 28px;
         }
+        @include mobile {
+            font-size: 16px;
+        }
     }
     &__download {
         max-width: 420px;
         display: flex;
         justify-content: space-between;
+
+        @include mobile {
+            justify-content: space-evenly;
+        }
 
         a {
             @include tablet {
@@ -96,6 +108,10 @@
     
     &__image {
         position: relative;
+
+        @include mobile {
+            max-width: 60%;
+        }
 
         .mobile_app {
             max-width: 500px;
