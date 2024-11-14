@@ -15,6 +15,10 @@ body {
 	background: var(--c-white);
     color: var(--c-black);
     transition: var(--transition);
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 .btn {

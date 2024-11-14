@@ -13,7 +13,14 @@
         gap: 10px;
     }
     @include tablet {
-        margin: 30px;
+        margin: 0;
+        padding: 30px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(241, 217, 75, 0.6);
+        z-index: 3;
     }
     @include mobile {
         margin: 20px 10px;
@@ -71,10 +78,25 @@
             gap: 20px;
         }
         @include tablet {
-            display: none;
-            position: absolute;
+            flex-direction: column;
+            gap: 40px;
+            position: fixed;
+            height: 50%;
             left: 0;
+            right: 0;
+            top: 0;
+            background: rgba(7, 7, 7, 0.9);
+            z-index: 3;
+            transform: translateY(-105%);
         }
+
+        &.active {
+            transform: translateY(0);
+        }
+    }
+
+    &__li:hover {
+        transform: scale(1.09);
     }
     
     &__a {
@@ -91,10 +113,11 @@
             font-size: 18px;
             font-weight: 600;
         }
-    }
-    
-    &__li:hover {
-        transform: scale(1.09);
+        @include tablet {
+            color: var(--c-white);
+            font-size: 24px;
+            font-weight: 400;
+        }
     }
 
     &__burger {
@@ -102,6 +125,7 @@
         width: 28px;
         height: 28px;
         position: relative;
+        cursor: pointer;
         span {
             display: block;
             position: absolute;

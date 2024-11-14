@@ -13,6 +13,7 @@
         }
         @include tablet {
             padding-inline: 30px;
+            margin-top: 150px;
         }
         @include mobile {
             padding-inline: 10px;
