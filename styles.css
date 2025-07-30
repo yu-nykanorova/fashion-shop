@@ -790,8 +790,7 @@ body {
 
 .advert {
   margin-bottom: 190px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#e0c340), color-stop(3.93%, #dfc23e), color-stop(7.23%, #e1c441), color-stop(10.23%, #e3c743), color-stop(13.14%, #e4c542), color-stop(16.22%, #e6c744), color-stop(19.84%, #e7c845), color-stop(24.38%, #e5c643), color-stop(31%, #e6c945), color-stop(37.19%, #e3c743), color-stop(43.33%, #e9ca48), color-stop(50.36%, #edce49), color-stop(56.57%, #f0d44c), color-stop(62.71%, #f4d84f), color-stop(67.12%, #f6da52), color-stop(73.77%, #f7db53), color-stop(79.08%, #f9dd55), color-stop(85.64%, #f9df56), color-stop(93.5%, #fae157), to(#f9df56));
-  background: linear-gradient(360deg, #e0c340 0%, #dfc23e 3.93%, #e1c441 7.23%, #e3c743 10.23%, #e4c542 13.14%, #e6c744 16.22%, #e7c845 19.84%, #e5c643 24.38%, #e6c945 31%, #e3c743 37.19%, #e9ca48 43.33%, #edce49 50.36%, #f0d44c 56.57%, #f4d84f 62.71%, #f6da52 67.12%, #f7db53 73.77%, #f9dd55 79.08%, #f9df56 85.64%, #fae157 93.5%, #f9df56 100%); }
+  background: linear-gradient(155deg, #fff47e 0%, #f9dd55 55%, #f0d34c 65%, #e0c340 80%); }
   @media (max-width: 1536px) {
     .advert {
       margin-bottom: 150px; } }
@@ -808,12 +807,14 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 768px) {
+      .advert__container {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
   .advert__image {
     -ms-flex-item-align: stretch;
         align-self: stretch;
@@ -839,6 +840,12 @@ body {
   .advert__poster {
     -o-object-fit: cover;
        object-fit: cover; }
+  .advert__info_box {
+    background: -webkit-gradient(linear, left bottom, left top, from(#e0c340), color-stop(3.93%, #dfc23e), color-stop(7.23%, #e1c441), color-stop(10.23%, #e3c743), color-stop(13.14%, #e4c542), color-stop(16.22%, #e6c744), color-stop(19.84%, #e7c845), color-stop(24.38%, #e5c643), color-stop(31%, #e6c945), color-stop(37.19%, #e3c743), color-stop(43.33%, #e9ca48), color-stop(50.36%, #edce49), color-stop(56.57%, #f0d44c), color-stop(62.71%, #f4d84f), color-stop(67.12%, #f6da52), color-stop(73.77%, #f7db53), color-stop(79.08%, #f9dd55), color-stop(85.64%, #f9df56), color-stop(93.5%, #fae157), to(#f9df56));
+    background: linear-gradient(0deg, #e0c340 0%, #dfc23e 3.93%, #e1c441 7.23%, #e3c743 10.23%, #e4c542 13.14%, #e6c744 16.22%, #e7c845 19.84%, #e5c643 24.38%, #e6c945 31%, #e3c743 37.19%, #e9ca48 43.33%, #edce49 50.36%, #f0d44c 56.57%, #f4d84f 62.71%, #f6da52 67.12%, #f7db53 73.77%, #f9dd55 79.08%, #f9df56 85.64%, #fae157 93.5%, #f9df56 100%); }
+    @media (max-width: 768px) {
+      .advert__info_box {
+        width: 100%; } }
   .advert__info {
     font-family: var(--main-font);
     padding: 128px 200px 155px 10px;
