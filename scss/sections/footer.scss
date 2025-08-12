@@ -4,30 +4,30 @@
     &__container {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 100px;
-        padding: 119px 100px 147px;
+        margin-bottom: 100rem;
+        padding: 119rem 100rem 147rem;
 
         @include desktop {
-            padding: 80px 60px;
-            gap: 20px;
+            padding: 80rem 60rem;
+            gap: 20rem;
         }
         @include desktop-small {
             flex-direction: column;
-            gap: 50px;
+            gap: 50rem;
         }
         @include tablet {
-            padding: 40px 30px;
+            padding: 40rem 30rem;
         }
         @include tablet {
-            gap: 30px;
+            gap: 30rem;
         }
     }
     
     &__info {
-        max-width: 450px;
+        max-width: 450rem;
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 32rem;
 
         @include desktop-small {
             flex-direction: row;
@@ -37,7 +37,7 @@
         }
         @include tablet {
             flex-direction: column;
-            gap: 20px;
+            gap: 20rem;
         }
     }
     
@@ -48,7 +48,7 @@
     &__slogan {
         font-family: var(--second-font);
         font-weight: 400;
-        font-size: 24px;
+        font-size: 24rem;
         line-height: 167%;
         letter-spacing: 0.02em;
         color: #8e8e8e;
@@ -57,18 +57,18 @@
             text-align: center;
         }
         @include tablet {
-            font-size: 18px;
+            font-size: 18rem;
         }
     }
     
     &__social {
         display: flex;
         align-items: center;
-        gap: 14px;
-        max-width: 250px;
+        gap: 14rem;
+        max-width: 250rem;
 
         @include tablet-small {
-            max-width: 200px;
+            max-width: 200rem;
         }
 
         & img:hover {
@@ -79,34 +79,34 @@
     &__nav {
         font-family: var(--second-font);
         display: flex;
-        gap: 168px;
+        gap: 168rem;
 
         @include desktop {
-            gap: 40px;
+            gap: 40rem;
             justify-content: space-between;
         }
 
         @include tablet {
-            gap: 20px;
+            gap: 20rem;
         }
         @include tablet-small {
-            gap: 10px;
+            gap: 10rem;
         }
         @include mobile {
             flex-direction: column;
-            gap: 20px;
+            gap: 20rem;
         }
 
         &_company, &_guides, &_legal {
 
             @include desktop {
-                flex: calc((100% - 40px * 2) / 3);
+                flex: calc((100% - 40rem * 2) / 3);
             }
             @include tablet {
-                flex: calc((100% - 20px * 2) / 3);
+                flex: calc((100% - 20rem * 2) / 3);
             }
             @include tablet-small {
-                flex: calc((100% - 10px * 2) / 3);
+                flex: calc((100% - 10rem * 2) / 3);
             }
         }
     }
@@ -115,16 +115,16 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 32px;
+        gap: 32rem;
 
         @include desktop-small {
             align-items: center;
         }
         @include tablet {
-            gap: 20px;
+            gap: 20rem;
         }
         @include mobile {
-            gap: 10px;
+            gap: 10rem;
         }
     }
 
@@ -134,13 +134,13 @@
     
     &__a {
         font-weight: 400;
-        font-size: 24px;
+        font-size: 24rem;
         line-height: 167%;
         letter-spacing: 0.02em;
         color: #8e8e8e;
 
         @include tablet {
-            font-size: 18px;
+            font-size: 18rem;
         }
     }
     

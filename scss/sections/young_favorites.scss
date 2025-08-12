@@ -1,61 +1,61 @@
 .young-fav {
-    margin-bottom: 200px;
+    margin-bottom: 200rem;
 
     @include desktop {
-        margin-bottom: 150px;
+        margin-bottom: 150rem;
     }
     @include desktop-small {
-        margin-bottom: 100px;
+        margin-bottom: 100rem;
     }
     @include tablet-small {
-        margin-bottom: 40px;
+        margin-bottom: 40rem;
     }
     
     &__container {
-        padding: 0 100px;
+        padding: 0 100rem;
 
         @include desktop {
-            padding-inline: 60px;
+            padding-inline: 60rem;
         }
         @include tablet {
-            padding-inline: 30px;
+            padding-inline: 30rem;
         }
     }
     
     &__title {
         font-family: var(--main-font);
         font-weight: 900;
-        font-size: 48px;
+        font-size: 48rem;
         line-height: 104%;
         letter-spacing: 0.06em;
         color: var(--c-black);
-        margin-bottom: 118px;
+        margin-bottom: 118rem;
         position: relative;
         display: inline-block;
-        padding-bottom: 12px;
+        padding-bottom: 12rem;
 
         & .yellow_wave1 {
             position: absolute;
-            max-width: 190px;
+            max-width: 190rem;
             right: 0;
             bottom: 0;
             z-index: -1;
         }
 
         @include desktop {
-            margin-bottom: 70px;
+            margin-bottom: 70rem;
         }
         @include tablet {
-            margin-bottom: 50px;
-            font-size: 40px;
+            margin-bottom: 50rem;
+            font-size: 40rem;
         }
         @include tablet-small {
-            margin-bottom: 40px;
-            font-size: 30px;
+            margin-bottom: 40rem;
+            font-size: 30rem;
         }
         @include mobile {
-            margin-bottom: 20px;
-            font-size: 24px;
+            margin-bottom: 20rem;
+            font-size: 24rem;
         }
     }
     
@@ -63,23 +63,23 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 47px;
+        gap: 47rem;
 
         @include desktop {
             justify-content: space-between;
         }
         @include tablet-small {
-            gap: 20px;
+            gap: 20rem;
         }
     }
     
     &__item_box {
-        flex: 0 1 calc((100% - 47px)/2);
+        flex: 0 1 calc((100% - 47rem)/2);
         display: flex;
         flex-direction: column;
         
         @include tablet-small {
-            flex: 0 1 calc((100% - 20px)/2);
+            flex: 0 1 calc((100% - 20rem)/2);
         }
         @include mobile {
             flex: 0 1 100%;
@@ -87,12 +87,12 @@
     }
     
     &__item_image {
-        border-radius: 20px;
-        margin-bottom: 28px;
+        border-radius: 20rem;
+        margin-bottom: 28rem;
         cursor: pointer;
 
         & img {
-            border-radius: 20px;
+            border-radius: 20rem;
             &:hover {
                 transform: scale(1.02);
                 box-shadow: 0 0 2px 1px rgba(67, 62, 4, 0.5), 0 0 20px 0 rgba(235, 217, 107, 0.5);
@@ -100,7 +100,7 @@
         }
 
         @include desktop {
-            margin-bottom: 16px;
+            margin-bottom: 16rem;
         }
     }
       

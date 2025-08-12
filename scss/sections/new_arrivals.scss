@@ -1,60 +1,60 @@
 .new-arriv {
-    margin-bottom: 190px;
+    margin-bottom: 190rem;
 
     @include desktop {
-        margin-bottom: 150px;
+        margin-bottom: 150rem;
     }
     @include desktop-small {
-        margin-bottom: 100px;
+        margin-bottom: 100rem;
     }
     @include tablet-small {
-        margin-bottom: 40px;
+        margin-bottom: 40rem;
     }
 
     &__container {
-        padding: 0 104px;
+        padding: 0 104rem;
 
         @include desktop {
-            padding-inline: 60px;
+            padding-inline: 60rem;
         }
         @include tablet {
-            padding-inline: 30px;
+            padding-inline: 30rem;
         }
     }
     
     &__title {
         font-family: var(--main-font);
         font-weight: 900;
-        font-size: 48px;
+        font-size: 48rem;
         line-height: 104%;
         letter-spacing: 0.06em;
         color: var(--c-black);
-        margin-bottom: 101px;
+        margin-bottom: 101rem;
         position: relative;
         display: inline-block;
-        padding-bottom: 8px;
-        padding-right: 8px;
+        padding-bottom: 8rem;
+        padding-right: 8rem;
 
         @include desktop {
-            margin-bottom: 70px;
+            margin-bottom: 70rem;
         }
         @include tablet {
-            margin-bottom: 50px;
-            font-size: 40px;
+            margin-bottom: 50rem;
+            font-size: 40rem;
         }
         @include tablet-small {
-            margin-bottom: 40px;
-            font-size: 30px;
+            margin-bottom: 40rem;
+            font-size: 30rem;
         }
         @include mobile {
-            margin-bottom: 20px;
-            font-size: 20px;
+            margin-bottom: 20rem;
+            font-size: 20rem;
         }
     }
     
     &__title .yellow_wave2 {
         position: absolute;
-        max-width: 186px;
+        max-width: 186rem;
         right: 0;
         bottom: 0;
         z-index: -1;
@@ -64,27 +64,27 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 90px;
+        gap: 90rem;
 
         @include desktop {
             justify-content: space-between;
-            gap: 60px;
+            gap: 60rem;
         }
         @include tablet {
-            gap: 30px;
+            gap: 30rem;
         }
     }
     
     &__item_box {
-        flex: 0 1 calc((100% - 90px * 2)/3);
+        flex: 0 1 calc((100% - 90rem * 2)/3);
         display: flex;
         flex-direction: column;
 
         @include desktop {
-            flex: 0 1 calc((100% - 60px * 2)/3);
+            flex: 0 1 calc((100% - 60rem * 2)/3);
         }
         @include tablet {
-            flex: 0 1 calc((100% - 30px * 2)/3);
+            flex: 0 1 calc((100% - 30rem * 2)/3);
         }
         @include mobile {
             flex: 0 1 100%;
@@ -92,12 +92,12 @@
     }
     
     &__item_image {
-        margin-bottom: 28px;
-        border-radius: 20px;
+        margin-bottom: 28rem;
+        border-radius: 20rem;
         cursor: pointer;
 
         img {
-            border-radius: 20px;
+            border-radius: 20rem;
 
             &:hover {
                 transform: scale(1.02);
@@ -106,7 +106,7 @@
         }
 
         @include desktop {
-            margin-bottom: 16px;
+            margin-bottom: 16rem;
         }
     }
     

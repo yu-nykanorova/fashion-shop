@@ -1,86 +1,86 @@
 .app {
-    margin-bottom: 200px;
+    margin-bottom: 200rem;
 
     @include desktop {
-        margin-bottom: 150px;
+        margin-bottom: 150rem;
     }
     @include desktop-small {
-        margin-bottom: 100px;
+        margin-bottom: 100rem;
     }
     @include tablet-small {
-        margin-bottom: 40px;
+        margin-bottom: 40rem;
     }
 
     &__container {
-        padding: 0 218px;
+        padding: 0 218rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         @include desktop {
-            padding-inline: 120px;
+            padding-inline: 120rem;
         }
         @include desktop-small {
-            padding-inline: 100px;
+            padding-inline: 100rem;
         }
         @include tablet {
-            padding-inline: 50px;
+            padding-inline: 50rem;
         }
         @include mobile {
-            padding-inline: 20px;
+            padding-inline: 20rem;
             flex-direction: column;
             text-align: center;
         }
     }
     &__info {
         font-family: var(--main-font);
-        max-width: 520px;
+        max-width: 520rem;
     }
     
     &__title {
         font-weight: 900;
-        font-size: 48px;
+        font-size: 48rem;
         line-height: 150%;
         letter-spacing: 0.06em;
         color: var(--c-black);
-        margin-bottom: 41px;
+        margin-bottom: 41rem;
 
         @include desktop-small {
-            font-size: 44px;
+            font-size: 44rem;
             line-height: 120%;
-            margin-bottom: 36px;
+            margin-bottom: 36rem;
         }
         @include tablet {
-            font-size: 38px;
+            font-size: 38rem;
         }
         @include tablet-small {
-            font-size: 28px;
-            margin-bottom: 28px;
+            font-size: 28rem;
+            margin-bottom: 28rem;
         }
     }
     &__desc {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 24rem;
         line-height: 146%;
         letter-spacing: -0.04em;
         color: #7c7c7c;
-        margin-bottom: 65px;
+        margin-bottom: 65rem;
 
         @include desktop-small {
-            margin-bottom: 36px;
+            margin-bottom: 36rem;
         }
         @include tablet {
-            font-size: 20px;
+            font-size: 20rem;
         }
         @include tablet-small {
-            margin-bottom: 28px;
+            margin-bottom: 28rem;
         }
         @include mobile {
-            font-size: 16px;
+            font-size: 16rem;
         }
     }
     &__download {
-        max-width: 420px;
+        max-width: 420rem;
         display: flex;
         justify-content: space-between;
 
@@ -90,13 +90,13 @@
 
         a {
             @include tablet {
-                max-width: 180px;
+                max-width: 180rem;
             }
             @include tablet {
-                max-width: 140px;
+                max-width: 140rem;
             }
             @include tablet-small {
-                max-width: 120px;
+                max-width: 120rem;
             }
         }
 
@@ -114,7 +114,7 @@
         }
 
         .mobile_app {
-            max-width: 500px;
+            max-width: 500rem;
         }
 
         .rings {
@@ -130,23 +130,23 @@
         }
         
         .ellipse_large-grey {
-            max-width: 22px;
+            max-width: 22rem;
             top: 16%;
             left: -15%;
         }
         
         .ellipse_large-yellow {
-            max-width: 50px;
+            max-width: 50rem;
             top: 15%;
             right: -10%;
             @include tablet-small {
-                max-width: 40px;
+                max-width: 40rem;
                 top: 20%;
             }
         }
         
         .ellipse_small-yellow {
-            max-width: 34px;
+            max-width: 34rem;
             bottom: 11%;
             left: -17%;
 
@@ -154,13 +154,13 @@
                 left: -5%;
             }
             @include tablet-small {
-                max-width: 26px;
+                max-width: 26rem;
                 bottom: 18%;
             }
         }
         
         .ellipse_small-grey {
-            max-width: 17px;
+            max-width: 17rem;
             bottom: 22%;
             right: -15%;
         }

@@ -1,26 +1,33 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 46rem 100rem 56rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
 
-    @include desktop {
-        margin-inline: 60rem;
+    &__container {
+        max-width: 1920px;
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 46rem 100rem 56rem;
+
+        @include desktop-small {
+            padding: 46rem 80rem 56rem;
+            gap: 15rem;
+        }
+        @include tablet-small {
+            padding: 40rem 60rem;
+        }
+        @include mobile {
+            padding: 30rem;
+        }
     }
-    @include desktop-small {
-        margin-top: 30rem;
-        margin-bottom: 40rem;
-        gap: 10rem;
-    }
-    @include tablet {
-        margin: 0;
-        padding: 30rem;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: rgba(241, 217, 75, 0.6);
-        z-index: 3;
+
+    &.scrolled {
+        background: rgba(224, 224, 224, 0.5);
+        backdrop-filter: blur(5px);
     }
 
     &__logo {
@@ -78,7 +85,7 @@
             flex-direction: column;
             gap: 40rem;
             position: fixed;
-            height: 100%;
+            height: 100vh;
             width: 80%;
             left: 0;
             right: 0;
@@ -179,6 +186,14 @@
             font-size: 16rem;
             font-weight: 400;
             padding: 10rem 15rem;
+        }
+    }
+
+    .fa-xmark {
+        display: none;
+
+        @include tablet {
+            display: block;
         }
     }
 }    

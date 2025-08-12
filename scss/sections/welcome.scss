@@ -1,46 +1,46 @@
 .welcome {
-    margin-bottom: 63px;
+    margin-bottom: 63rem;
 
     @include tablet-small {
-        margin-bottom: 30px;
+        margin-bottom: 30rem;
     }
     
     &__container {
-        padding-inline: 100px;
+        padding-inline: 100rem;
+        margin-top: 150rem;
         
         @include desktop {
-            padding-inline: 50px;
+            padding-inline: 50rem;
         }
         @include tablet {
-            padding-inline: 30px;
-            margin-top: 150px;
+            padding-inline: 30rem;
         }
         @include mobile {
-            padding-inline: 10px;
+            padding-inline: 10rem;
         }
     }
 
     &__banner {
         display: flex;
         justify-content: space-between;
-        gap: 43px;
+        gap: 43rem;
         align-items: center;
         background: #f4f6f5;
-        border-radius: 59px;
-        padding: 77px 81px 0px 119px;
+        border-radius: 59rem;
+        padding: 77rem 81rem 0rem 119rem;
 
         @include desktop {
-            padding: 50px 60px 0px;
+            padding: 50rem 60rem 0rem;
         }
         @include desktop-small {
             flex-direction: column;
             gap: initial;
         }
         @include tablet-small {
-            padding: 30px 30px 0px;
+            padding: 30rem 30rem 0rem;
         }
         @include mobile {
-            padding: 20px 0 0;
+            padding: 20rem 0 0;
         }
     }
 
@@ -56,113 +56,113 @@
 
         .white_rect {
             position: absolute;
-            max-width: 450px;
+            max-width: 450rem;
             left: -10%;
             top: 0;
             z-index: auto;
 
             @include desktop-small {
-                max-width: 350px;
+                max-width: 350rem;
                 left: 5%;
             }
             @include tablet-small {
-                max-width: 280px;
+                max-width: 280rem;
             }
             @include mobile {
-                max-width: 180px;
+                max-width: 180rem;
             }
         }
         
         .yellow_rect {
             position: absolute;
-            max-width: 450px;
+            max-width: 450rem;
             left: -5%;
             bottom: 25%;
             z-index: auto;
             
             @include desktop-small {
-                max-width: 350px;
+                max-width: 350rem;
                 left: initial;
                 bottom: initial;
                 right: 0;
                 top: 0;
             }
             @include tablet-small {
-                max-width: 280px;
+                max-width: 280rem;
             }
             @include mobile {
-                max-width: 180px;
+                max-width: 180rem;
                 right: 5%;
             }
         }
     }
     
     &__title {
-        max-width: 474px;
+        max-width: 474rem;
         font-family: var(--main-font);
         font-weight: 900;
-        font-size: 96px;
+        font-size: 96rem;
         line-height: 125%;
         color: var(--c-black);
-        margin-bottom: 40px;
+        margin-bottom: 40rem;
         position: relative;
 
         @include desktop {
-            font-size: 70px;
-            margin-bottom: 30px;
+            font-size: 70rem;
+            margin-bottom: 30rem;
         }
         @include desktop-small {
             max-width: 100%;
             font-weight: 800;
-            margin-bottom: 20px;
+            margin-bottom: 20rem;
         }
         @include tablet {
-            font-size: 60px;
+            font-size: 60rem;
         }
         @include tablet-small {
-            font-size: 50px;
+            font-size: 50rem;
         }
         @include mobile {
-            font-size: 32px;
-            margin-bottom: 10px;
+            font-size: 32rem;
+            margin-bottom: 10rem;
         }
     }
     
     &__desc {
         font-family: var(--main-font);
         font-weight: 400;
-        font-size: 32px;
+        font-size: 32rem;
         letter-spacing: -0.05em;
         color: #191818;
-        margin-bottom: 32px;
+        margin-bottom: 32rem;
 
         @include desktop {
-            font-size: 26px;
+            font-size: 26rem;
         }
         @include tablet {
-            font-size: 22px;
+            font-size: 22rem;
         }
         @include tablet-small {
-            margin-bottom: 22px;
+            margin-bottom: 22rem;
         }
         @include mobile {
-            font-size: 16px;
-            margin-bottom: 10px;
+            font-size: 16rem;
+            margin-bottom: 10rem;
         }
     }
     
     &__button_box {
         display: flex;
         align-items: center;
-        gap: 34px;
-        margin-bottom: 90px;
+        gap: 34rem;
+        margin-bottom: 90rem;
 
         @include desktop {
-            margin-bottom: 60px;
-            gap: 30px;
+            margin-bottom: 60rem;
+            gap: 30rem;
         }
         @include desktop-small {
-            margin-bottom: 10px;
+            margin-bottom: 10rem;
             justify-content: center;
         }
     }
@@ -170,7 +170,7 @@
     &__button_wave {
 
         @include tablet {
-            max-width: 160px;
+            max-width: 160rem;
         }
         @include tablet-small {
             display: none;
@@ -180,32 +180,32 @@
     &__button {
         font-family: var(--main-font);
         font-weight: 500;
-        font-size: 30px;
+        font-size: 30rem;
         letter-spacing: -0.05em;
         text-align: center;
         color: var(--c-white);
         background: var(--c-black);
-        border-radius: 10px;
-        padding: 18px 40px;
+        border-radius: 10rem;
+        padding: 18rem 40rem;
 
         @include desktop {
-            padding-inline: 20px;
-            font-size: 26px;
+            padding-inline: 20rem;
+            font-size: 26rem;
             font-weight: 400;
             flex: 55%;
         }
         @include desktop-small {
-            font-size: 24px;
+            font-size: 24rem;
             flex: initial;
-            padding-inline: 40px;
+            padding-inline: 40rem;
         }
         @include tablet-small {
-            font-size: 20px;
-            padding: 12px 28px;
+            font-size: 20rem;
+            padding: 12rem 28rem;
         }
         @include mobile {
-            font-size: 16px;
-            padding: 8px 18px;
+            font-size: 16rem;
+            padding: 8rem 18rem;
         }
     }
     
@@ -237,13 +237,13 @@
     
     &__image .star {
         position: absolute;
-        max-width: 58px;
+        max-width: 58rem;
 
         @include tablet-small {
-            max-width: 44px;
+            max-width: 44rem;
         }
         @include mobile {
-            max-width: 30px;
+            max-width: 30rem;
         }
     }
     

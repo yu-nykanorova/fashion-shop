@@ -29,34 +29,34 @@ body {
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 1920rem;
     margin-inline: auto;
 }
 
 .logo_title {
     font-family: var(--main-font);
     font-weight: 900;
-    font-size: 40px;
+    font-size: 40rem;
     letter-spacing: 0.03em;
 
     @include desktop-small {
-        font-size: 36px;
+        font-size: 36rem;
     }
 }
 
 .explore_now {
     font-family: var(--main-font);
     font-weight: 500;
-    font-size: 24px;
+    font-size: 24rem;
     line-height: 208%;
     letter-spacing: -0.04em;
     color: #7f7f7f;
 
     @include desktop {
-        font-size: 20px;
+        font-size: 20rem;
     }
     @include mobile {
-        font-size: 16px;
+        font-size: 16rem;
     }
 }
 
@@ -69,22 +69,22 @@ body {
 .item_title {
     font-family: var(--main-font);
     font-weight: 500;
-    font-size: 32px;
+    font-size: 32rem;
     line-height: 156%;
     letter-spacing: -0.04em;
     color: var(--c-black);
 
     @include desktop {
-        font-size: 26px;
+        font-size: 26rem;
     }
     @include desktop-small {
-        font-size: 24px;
+        font-size: 24rem;
     }
     @include tablet-small {
-        font-size: 22px;
+        font-size: 22rem;
     }
     @include mobile {
-        font-size: 18px;
+        font-size: 18rem;
     }
 }
 

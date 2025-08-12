@@ -2,6 +2,7 @@ const burger = document.querySelector('.header__burger');
 const navList = document.querySelector('.header__ul');
 const closeIcon = document.querySelector('.fa-solid.fa-xmark');
 const body = document.body;
+const header = document.querySelector('.header');
 
 function openMenu() {
     navList.classList.add('active');
@@ -21,4 +22,12 @@ document.addEventListener('click', (event) => {
     if (!navList.contains(event.target) && !burger.contains(event.target)) {
         closeMenu();
     }
-})
+});
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 90) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
